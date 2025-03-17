@@ -13,6 +13,33 @@ body {
       }
     }
   }
+  main {
+    display: flex;
+    #menu {
+      li {
+        list-style: none;
+      }
+    }
+    #nav {
+      ul {
+        li {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+        }
+        .link {
+          display: flex;
+          flex-direction: row;
+          background-color: green;
+          color: white;
+          border-radius: 50px;
+          padding: 10px 20px;
+          text-align: center;
+          list-style: none;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -25,4 +52,22 @@ body {
       }
     }
   }
+}
+body {
+  background-color: #f8f9fa;
+}
+.sidebar {
+  background-color: #3ddc97;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+.card {
+  border-radius: 10px;
+  padding: 15px;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }

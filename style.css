@@ -28,7 +28,9 @@ body {
     li {
       list-style: none;
     }
-
+    #bottom-sidebar {
+      display: none;
+    }
     .menu-item {
       display: flex;
       align-items: center;
@@ -195,7 +197,18 @@ body {
     main {
       display: flex;
       flex-direction: column-reverse;
-
+      #left-side {
+        width: 1vh;
+        height: 1px;
+        #bottom-sidebar {
+          display: block;
+          display: flex;
+          justify-content: space-between;
+        }
+        ul {
+          display: none;
+        }
+      }
       #right-side {
         #nav img {
           display: none;

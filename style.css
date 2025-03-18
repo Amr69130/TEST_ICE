@@ -1,3 +1,18 @@
+/* Cher relecteur de code veuillez svp pardonner mon rendu tardif.
+Etant en plein cours de 09h à 17h (sur PHP en +) j'ai fait le maximum.
+Concernant la structure :
+vous trouverez une utilisation abondante de sections et de div 
+(il etait beaucoup plus clair pour moi de séparer ainsi).
+
+Concernant le style : 
+vous trouverez une double utilisation ; à la fois l'utilisation de la librairie Bootstrap 
+ainsi que du CSS personnel, vous verrez également que j'ai choisi dans 
+la mesure du possible de travailler en CSS imbriqué.
+
+Dans la sidebar en desktop les liens "patients" et "documents" sont des menus déroulants 
+actifs en revanche en mobile le menu burger ne l'est pas car je ne savais pas 
+comment réaliser cela sans utiliser js.  */
+
 body {
   header {
     display: flex;
@@ -159,8 +174,7 @@ body {
       }
     }
     #cards {
-      padding: 4em;
-
+      padding: 1em;
       ul {
         display: flex;
         flex-wrap: wrap;

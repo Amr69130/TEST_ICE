@@ -87,6 +87,9 @@ body {
   #right-side {
     #nav {
       #title-nav {
+        h1 {
+          text-align: center;
+        }
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -129,23 +132,25 @@ body {
         }
       }
       #title-nav {
+        align-items: center;
+        justify-items: center;
         padding: 4em;
         background-color: #e2f8ef;
         gap: 2em;
-        text-align: center;
       }
       #search {
-        padding: 4em;
+        align-items: center;
+        padding: 3em;
         display: flex;
         justify-content: center;
-        gap: 2em;
-
+        gap: 1em;
+        div:last-child {
+          text-align: center;
+        }
         h1 {
           color: #3ddc97;
         }
-        p {
-          text-align: center;
-        }
+
         .btn {
           border: solid gainsboro;
           border-radius: 40px;
@@ -158,6 +163,7 @@ body {
       ul {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 2em;
         img {
           margin-bottom: -1em;

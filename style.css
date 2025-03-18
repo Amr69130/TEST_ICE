@@ -33,21 +33,34 @@ body {
 
           li {
             list-style: none;
-            a {
-              text-decoration: none;
-              color: white;
-            }
+
             img {
               color: white;
             }
           }
-          .link {
+          .link-green {
             background-color: #3ddc97;
             color: white;
             border-radius: 50px;
             padding: 10px 20px;
             text-align: center;
             list-style: none;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .link-white {
+            border: solid #3ddc97;
+            color: #3ddc97;
+            border-radius: 50px;
+            padding: 10px 20px;
+            text-align: center;
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #3ddc97;
+            }
           }
         }
         #title-nav {
@@ -76,6 +89,9 @@ body {
           li {
             list-style: none;
             text-align: center;
+            h3 {
+              color: #3ddc97;
+            }
             .white-contain {
               padding: 2em;
               border-radius: 5%;
@@ -84,8 +100,12 @@ body {
             .green-contain {
               padding: 2em;
               border-radius: 5%;
-
               border: solid #3ddc97;
+              div {
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+              }
             }
           }
         }

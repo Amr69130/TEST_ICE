@@ -1,3 +1,11 @@
+<!-- Cher relecteur de code, 
+concernant la structure vous trouverez une utilisation abondante de sections et de div 
+(il etais beaucoup plus clair pour moi de séparer ainsi).
+Concernant le style
+vous trouverez une double utilisation ; à la fois l'utilisation de la librairie Bootstrap 
+ainsi que du CSS personnel, vous verrez également que j'ai choisi dans 
+la mesure du possible de travailler en CSS imbriqué. -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -58,42 +66,44 @@
       </section>
       <section id="right-side">
         <section id="nav">
-          <div>
-            <h1>Les patients du cabinet</h1>
-          </div>
-          <div>
-            <nav>
-              <ul>
-                <li>
-                  <img
-                    src="images/Picto nouveau patient.svg"
-                    alt="pictogramme d'ajout patient"
-                  />
-                  <a href="" class="link">Ajouter un patient</a>
-                </li>
-                <li>
-                  <img
-                    src="images/Picto patient attente.svg"
-                    alt="pictogramme de patient en attente"
-                  />
-                  <a href="" class="link">Patients en attente</a>
-                </li>
-                <li>
-                  <img
-                    src="images/Picto archives.svg"
-                    alt="pictogramme archives"
-                  />
-                  <a href="" class="link">Patients archivés</a>
-                </li>
-                <li>
-                  <img
-                    src="images/Picto aidant.svg"
-                    alt="pictogramme aidants"
-                  />
-                  <a href="" class="link">Voir les aidants</a>
-                </li>
-              </ul>
-            </nav>
+          <div id="title-nav">
+            <div>
+              <h1>Les patients du cabinet</h1>
+            </div>
+            <div>
+              <nav>
+                <ul>
+                  <li class="link">
+                    <img
+                      src="images/Picto nouveau patient.svg"
+                      alt="pictogramme d'ajout patient"
+                    />
+                    <a href="">Ajouter un patient</a>
+                  </li>
+                  <li class="link">
+                    <img
+                      src="images/Picto patient attente.svg"
+                      alt="pictogramme de patient en attente"
+                    />
+                    <a href="">Patients en attente</a>
+                  </li>
+                  <li class="link">
+                    <img
+                      src="images/Picto archives.svg"
+                      alt="pictogramme archives"
+                    />
+                    <a href="" class="link">Patients archivés</a>
+                  </li>
+                  <li class="link">
+                    <img
+                      src="images/Picto aidant.svg"
+                      alt="pictogramme aidants"
+                    />
+                    <a href="">Voir les aidants</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
           <section id="search">
             <div>
@@ -123,6 +133,7 @@
               <div class="white-contain">
                 <h3>Cécile Moulin</h3>
                 <p>81 ans</p>
+                <hr />
                 <p>04 77 36 65 95</p>
                 <p>cecilemoulin@gmail.com</p>
                 <p>16 rue Maurice Bouchor 69007 Lyon</p>
@@ -137,6 +148,7 @@
               <div class="green-contain">
                 <h3>Juliette Masselis</h3>
                 <p>81 ans</p>
+                <hr />
                 <p>04 77 36 65 95</p>
                 <p>cecilemoulin@gmail.com</p>
                 <p>16 rue Maurice Bouchor 69007 Lyon</p>
@@ -151,6 +163,7 @@
               <div class="white-contain">
                 <h3>René Guitay</h3>
                 <p>81 ans</p>
+                <hr />
                 <p>04 77 36 65 95</p>
                 <p>cecilemoulin@gmail.com</p>
                 <p>16 rue Maurice Bouchor 69007 Lyon</p>
@@ -165,6 +178,7 @@
               <div class="green-contain">
                 <h3>Clara Camalet</h3>
                 <p>81 ans</p>
+                <hr />
                 <p>04 77 36 65 95</p>
                 <p>cecilemoulin@gmail.com</p>
                 <p>16 rue Maurice Bouchor 69007 Lyon</p>
@@ -179,6 +193,7 @@
               <div class="white-contain">
                 <h3>Lola Dufour</h3>
                 <p>81 ans</p>
+                <hr />
                 <p>04 77 36 65 95</p>
                 <p>cecilemoulin@gmail.com</p>
                 <p>16 rue Maurice Bouchor 69007 Lyon</p>
@@ -193,6 +208,7 @@
               <div class="green-contain">
                 <h3>Etienne Morlé</h3>
                 <p>81 ans</p>
+                <hr />
                 <p>04 77 36 65 95</p>
                 <p>cecilemoulin@gmail.com</p>
                 <p>16 rue Maurice Bouchor 69007 Lyon</p>

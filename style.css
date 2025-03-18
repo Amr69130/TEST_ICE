@@ -23,7 +23,6 @@ body {
     }
 
     #right-side {
-      margin: 10em;
       #nav {
         text-align: center;
         display: flex;
@@ -34,6 +33,13 @@ body {
 
           li {
             list-style: none;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+            img {
+              color: white;
+            }
           }
           .link {
             background-color: #3ddc97;
@@ -44,9 +50,14 @@ body {
             list-style: none;
           }
         }
+        #title-nav {
+          padding: 4em;
+          background-color: #e2f8ef;
+        }
         #search {
+          padding: 4em;
           display: flex;
-          text-align: center;
+          justify-content: center;
           gap: 5em;
           h1 {
             color: #3ddc97;
@@ -54,16 +65,26 @@ body {
         }
       }
       #cards {
+        padding: 4em;
         ul {
           display: flex;
+          flex-wrap: wrap;
           gap: 2em;
+          img {
+            margin-bottom: -1em;
+          }
           li {
             list-style: none;
             text-align: center;
             .white-contain {
-              background-color: #3ddc97;
+              padding: 2em;
+              border-radius: 5%;
+              background-color: #e2f8ef;
             }
             .green-contain {
+              padding: 2em;
+              border-radius: 5%;
+
               border: solid #3ddc97;
             }
           }

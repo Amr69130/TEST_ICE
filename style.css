@@ -160,6 +160,7 @@ body {
     }
     #cards {
       padding: 4em;
+
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -177,7 +178,7 @@ body {
             color: #3ddc97;
           }
           .white-contain {
-            padding: 1em;
+            padding: 2vh 5vh 2vh 5vh;
             border-radius: 5%;
             background-color: #e2f8ef;
             div {
@@ -188,7 +189,7 @@ body {
             }
           }
           .green-contain {
-            padding: 1em;
+            padding: 2vh 5vh 2vh 5vh;
             border-radius: 5%;
             border: solid #3ddc97;
             div {

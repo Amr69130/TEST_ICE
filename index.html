@@ -45,15 +45,30 @@ la mesure du possible de travailler en CSS imbriqué. -->
           <li><a href="" class="nav-link text-white"></a>Mes ordonnances</li>
           <li>
             <a href="#" class="nav-link text-black">
-              <img
-                src="images/Picto Connexion.png"
-                alt="pictogramme de connexion"
-              />
-              Mes patients
-              <img
-                src="images/Picto fleche haut.svg"
-                alt="flèche pointant vers le haut"
-              />
+              <div class="slide">
+                <div class="dropdown">
+                  <a href="#" class="menu-item">
+                    <span>
+                      <img
+                        src="images/Picto Connexion.png"
+                        alt="pictogramme de connexion"
+                      />
+
+                      Mes patients
+                    </span>
+                    <img
+                      src="images/Picto fleche haut.svg"
+                      alt="flèche"
+                      class="fleche"
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#">Tous les patients</a></li>
+                    <li><a href="#">Patients en attente</a></li>
+                    <li><a href="#">Patients archivés</a></li>
+                  </ul>
+                </div>
+              </div>
             </a>
           </li>
           <li><a href="" class="nav-link text-white"></a>Mes pharmacies</li>

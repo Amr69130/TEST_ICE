@@ -15,6 +15,7 @@ body {
   }
   main {
     display: flex;
+    flex-direction: column;
     #menu {
       li {
         list-style: none;
@@ -36,6 +37,21 @@ body {
           padding: 10px 20px;
           text-align: center;
           list-style: none;
+        }
+      }
+    }
+    #cards {
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          text-align: center;
+          .white-contain {
+            background-color: #3ddc97;
+          }
+          .green-contain {
+            border: solid green;
+          }
         }
       }
     }

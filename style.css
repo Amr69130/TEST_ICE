@@ -88,14 +88,14 @@ body {
       transform: rotate(180deg);
     }
     .dropdown:hover .menu-item,
-    .dropdown:focus-within .menu-item {
+    img .dropdown:focus-within .menu-item {
       color: black;
     }
 
     .dropdown:hover .menu-item .fleche,
     .dropdown:focus-within .menu-item .fleche {
       transform: rotate(180deg);
-      filter: brightness(0);
+      filter: brightness(0) !important;
     }
   }
 

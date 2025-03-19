@@ -14,6 +14,7 @@ actifs en revanche en mobile le menu burger ne l'est pas car je ne savais pas
 comment réaliser cela sans utiliser js.  */
 
 body {
+  overflow-x: hidden;
   header {
     display: flex;
     justify-content: space-between;
@@ -282,9 +283,14 @@ body {
         }
         #cards {
           ul {
+            justify-content: center; /* Centre les éléments */
+            padding: 0; /* Supprime les éventuels espaces latéraux */
             li {
-              flex-basis: 100%;
-              max-width: 100%;
+              flex-basis: 90%; /* Largeur proche de 100% pour centrer */
+              max-width: 90%;
+              margin: 0 auto; /* Centre chaque carte */
+              /* flex-basis: 100%;
+              max-width: 100%; */
             }
           }
         }

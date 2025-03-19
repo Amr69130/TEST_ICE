@@ -234,17 +234,38 @@ body {
       flex-direction: column-reverse;
       #left-side {
         width: 100%;
+
         #bottom-sidebar {
-          display: block;
           display: flex;
+          align-items: center;
           justify-content: space-between;
+          padding: 10px 20px;
+          background-color: #3ddc97;
           position: relative;
-          #points {
-            text-align: center;
-            position: absolute;
-            right: 5%;
-          }
+          height: 10vh;
         }
+
+        #bottom-sidebar img {
+          height: auto;
+        }
+
+        #rectangle-container {
+          position: relative;
+        }
+
+        #points {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        #points p {
+          margin: 0;
+          font-weight: bold;
+        }
+
         ul {
           display: none;
         }

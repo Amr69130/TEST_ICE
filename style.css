@@ -103,12 +103,12 @@ body {
   #right-side {
     #nav {
       #title-nav {
-        h1 {
-          text-align: center;
-        }
         text-align: center;
         display: flex;
         flex-direction: column;
+        h1 {
+          text-align: center;
+        }
       }
       ul {
         display: flex;
@@ -189,25 +189,25 @@ body {
           text-align: center;
           flex-basis: calc(33.33% - 2em);
           max-width: calc(33.33% - 2em);
-          h3 {
-            color: #3ddc97;
-          }
-          .white-contain {
-            padding: 2vh 5vh 2vh 5vh;
-            border-radius: 5%;
-            background-color: #e2f8ef;
-            div {
-              display: flex;
-              justify-content: center;
-              align-items: flex-start;
-              gap: 1em;
+          &:nth-child(odd) {
+            > div {
+              border: solid #3ddc97;
             }
           }
-          .green-contain {
+          &:nth-child(even) {
+            > div {
+              border: solid #3ddc97;
+              background-color: white;
+            }
+          }
+          > div {
             padding: 2vh 5vh 2vh 5vh;
+            background-color: #e2f8ef;
             border-radius: 5%;
-            border: solid #3ddc97;
-            div {
+            h3 {
+              color: #3ddc97;
+            }
+            > div {
               display: flex;
               justify-content: center;
               align-items: flex-start;

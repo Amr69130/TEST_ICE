@@ -9,9 +9,8 @@ vous trouverez une double utilisation ; à la fois l'utilisation de la librairie
 ainsi que du CSS personnel, vous verrez également que j'ai choisi dans 
 la mesure du possible de travailler en CSS imbriqué.
 
-Dans la sidebar en desktop les liens "patients" et "documents" sont des menus déroulants 
-actifs en revanche en mobile le menu burger ne l'est pas car je ne savais pas 
-comment réaliser cela sans utiliser js.  -->
+Concernant les media queries pour la version mobile 
+je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥576px).  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,78 +54,107 @@ comment réaliser cela sans utiliser js.  -->
       </div>
     </header>
     <main>
-      <section id="left-side" class="col-md-2 sidebar">
-        <ul>
-          <li><a href="" class="nav-link text-white"></a>Accueil</li>
-          <li><a href="" class="nav-link text-white"></a>Mes ordonnances</li>
-          <li>
-            <a href="#" class="nav-link text-black">
-              <div class="slide">
-                <div class="dropdown">
-                  <a href="#" class="menu-item">
-                    <span>
-                      <img
-                        src="images/Picto Connexion.png"
-                        alt="pictogramme de connexion"
-                      />
+      <!-- Navbar avec menu burger pour mobile -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Bouton hamburger visible sur mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">CARRE JAUNE</a>
 
-                      Mes patients
-                    </span>
-                    <img
-                      src="images/Vector 2.png"
-                      alt="flèche"
-                      class="fleche"
-                    />
-                  </a>
-                  <ul class="submenu">
-                    <li><a href="#">Tous les patients</a></li>
-                    <li><a href="#">Patients en attente</a></li>
-                    <li><a href="#">Patients archivés</a></li>
-                  </ul>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li><a href="" class="nav-link text-white"></a>Mes pharmacies</li>
-          <li class="text-white">
-            <a href="#" class="nav-link text-black">
-              <div class="slide">
-                <div class="dropdown">
-                  <a href="#" class="menu-item">
-                    <span> Mes documents </span>
+          <!-- Menu de navigation -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li><a href="" class="nav-link text-white"></a>Accueil</li>
+              <li>
+                <a href="" class="nav-link text-white"></a>Mes ordonnances
+              </li>
+              <li>
+                <a href="#" class="nav-link text-black">
+                  <div class="slide">
+                    <div class="dropdown">
+                      <a href="#" class="menu-item">
+                        <span>
+                          <img
+                            src="images/Picto Connexion.png"
+                            alt="pictogramme de connexion"
+                          />
 
-                    <img
-                      src="images/Vector 2.png"
-                      alt="flèche"
-                      class="fleche"
-                    />
-                  </a>
-                  <ul class="submenu">
-                    <li><a href="#">Document 1</a></li>
-                    <li><a href="#">Document 2</a></li>
-                    <li><a href="#">Document 3</a></li>
-                  </ul>
-                </div>
-              </div>
-            </a>
-          </li>
+                          Mes patients
+                        </span>
+                        <img
+                          src="images/Vector 2.png"
+                          alt="flèche"
+                          class="fleche"
+                        />
+                      </a>
+                      <ul class="submenu">
+                        <li><a href="#">Tous les patients</a></li>
+                        <li><a href="#">Patients en attente</a></li>
+                        <li><a href="#">Patients archivés</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="" class="nav-link text-white"></a>Mes pharmacies</li>
+              <li class="text-white">
+                <a href="#" class="nav-link text-black">
+                  <div class="slide">
+                    <div class="dropdown">
+                      <a href="#" class="menu-item">
+                        <span> Mes documents </span>
 
-          <li><a href="" class="nav-link text-white"></a>Mes Pilbeez</li>
-          <li>
-            <a href="" class="nav-link text-white"></a>Parrainer un cabinet
-          </li>
-        </ul>
-        <div id="bottom-sidebar">
-          <img src="images/Vector.png" alt="menu burger" />
+                        <img
+                          src="images/Vector 2.png"
+                          alt="flèche"
+                          class="fleche"
+                        />
+                      </a>
+                      <ul class="submenu">
+                        <li><a href="#">Document 1</a></li>
+                        <li><a href="#">Document 2</a></li>
+                        <li><a href="#">Document 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
 
-          <div id="rectangle-container">
-            <img src="images/Rectangle 9.png" alt="rectangle jaune" />
-            <div id="points">
-              <p class="text-white">1740</p>
-              <p class="text-black">points</p>
-            </div>
+              <li><a href="" class="nav-link text-white"></a>Mes Pilbeez</li>
+              <li>
+                <a href="" class="nav-link text-white"></a>Parrainer un cabinet
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li> -->
+            </ul>
           </div>
         </div>
+      </nav>
+
+      <section id="left-side" class="col-md-2 sidebar">
+        <ul></ul>
       </section>
       <section id="right-side">
         <section id="nav">
@@ -356,6 +384,29 @@ comment réaliser cela sans utiliser js.  -->
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

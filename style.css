@@ -9,34 +9,45 @@ vous trouverez une double utilisation ; à la fois l'utilisation de la librairie
 ainsi que du CSS personnel, vous verrez également que j'ai choisi dans 
 la mesure du possible de travailler en CSS imbriqué.
 
-  */
+Concernant les media queries pour la version mobile 
+je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥576px)
+
+*/
+:root {
+  --font-family: "Nunito";
+  --green-1: #3ddc97;
+  --green-2: #e2f8ef;
+  --gradient: linear-gradient(to bottom, #e2f8ef, rgb(250, 250, 250));
+  --color-border: rgb(212, 212, 212);
+}
 
 * {
-  font-weight: bold;
+  font-family: var(--font-family);
 }
+
 body {
   overflow-x: hidden;
+
   header {
     display: flex;
     justify-content: space-between;
     padding: 1%;
     align-items: center;
+
     #connect {
-      /* Style général du menu utilisateur */
       .user-menu {
         position: relative;
         display: inline-block;
         cursor: pointer;
       }
 
-      /* Cacher le sous-menu par défaut */
       .submenu {
-        display: none; /* Le sous-menu est caché par défaut */
+        display: none;
         position: absolute;
-        top: 100%; /* Placer le menu juste sous l'avatar */
-        right: 0; /* Aligner à droite */
+        top: 100%;
+        right: 0;
         background-color: white;
-        border: 1px solid #ccc;
+        border: 1px solid var(--color-border);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 10px;
         list-style-type: none;
@@ -52,51 +63,57 @@ body {
         color: black;
       }
 
-      /* La flèche qui tourne */
       .fleche {
         margin-left: 8px;
-        transition: transform 0.3s ease; /* Animation de la flèche */
+        transition: transform 0.3s ease;
       }
 
-      /* Quand le menu est survolé, afficher le sous-menu et tourner la flèche */
       .user-menu:hover .submenu {
-        display: block; /* Afficher le sous-menu */
+        display: block;
       }
 
       .user-menu:hover .fleche {
-        transform: rotate(180deg); /* La flèche tourne */
+        transform: rotate(180deg);
       }
+
       display: flex;
       gap: 10px;
       align-items: center;
+
       p {
         text-align: end;
       }
     }
   }
+
   main {
     display: flex;
   }
 
   .sidebar {
-    background-color: #3ddc97;
+    background-color: var(--green-1);
     color: white;
     padding: 1%;
   }
+
   #left-side {
     .slide {
       color: rgb(255, 255, 255);
       margin: 2vh 0 2vh 0;
     }
+
     ul {
     }
+
     li {
       margin: 2vh;
       list-style: none;
     }
+
     #bottom-sidebar {
       display: none;
     }
+
     .menu-item {
       display: flex;
       align-items: center;
@@ -114,10 +131,12 @@ body {
 
     .submenu {
       list-style: none;
+
       li a {
         text-decoration: none;
         color: white;
       }
+
       margin: 0;
       max-height: 0;
       overflow: hidden;
@@ -133,6 +152,7 @@ body {
     .dropdown:focus-within .menu-item .fleche {
       transform: rotate(180deg);
     }
+
     .dropdown:hover .menu-item,
     img .dropdown:focus-within .menu-item {
       color: black;
@@ -151,10 +171,12 @@ body {
         text-align: center;
         display: flex;
         flex-direction: column;
+
         h1 {
           text-align: center;
         }
       }
+
       ul {
         display: flex;
         justify-content: space-evenly;
@@ -167,62 +189,71 @@ body {
             color: white;
           }
         }
+
         .link-green {
-          background-color: #3ddc97;
+          background-color: var(--green-1);
           color: white;
           border-radius: 40px;
           padding: 10px 20px;
           text-align: center;
           list-style: none;
+
           a {
             text-decoration: none;
             color: white;
           }
         }
+
         .link-white {
-          border: solid #3ddc97;
-          color: #3ddc97;
+          border: solid var(--green-1);
+          color: var(--green-1);
           border-radius: 40px;
           padding: 10px 20px;
           text-align: center;
           list-style: none;
+
           a {
             text-decoration: none;
-            color: #3ddc97;
+            color: var(--green-1);
           }
         }
       }
+
       #title-nav {
         align-items: center;
-
         padding: 4em;
-        background-color: #e2f8ef;
+        background: var(--gradient);
         gap: 2em;
       }
+
       #search {
         align-items: center;
         padding: 3em;
+
         div:first-child {
           float: left;
           position: relative;
           left: 15em;
         }
+
         div:last-child {
           justify-items: center;
           flex-grow: 1;
           text-align: center;
         }
+
         h1 {
-          color: #3ddc97;
+          color: var(--green-1);
         }
 
         .btn {
-          border: solid gainsboro;
+          border: solid var(--color-border);
           border-radius: 40px;
           text-align: center;
         }
       }
     }
+
     #cards {
       padding: 1em;
 
@@ -231,9 +262,11 @@ body {
         flex-wrap: wrap;
         align-items: center;
         gap: 2em;
+
         img {
           margin-bottom: -1em;
         }
+
         li {
           list-style: none;
           text-align: center;
@@ -243,27 +276,32 @@ body {
           text-align: center;
           flex-basis: calc(33.33% - 2em);
           max-width: calc(33.33% - 2em);
+
           &:nth-child(odd) {
             > div {
             }
           }
+
           &:nth-child(even) {
             > div {
-              border: solid #3ddc97;
+              border: solid var(--green-1);
               background-color: white;
             }
           }
+
           > div {
-            background-color: #e2f8ef;
+            background-color: var(--green-2);
             border-radius: 5%;
             h3 {
               padding: 1em;
-              color: #3ddc97;
+              color: var(--green-1);
               white-space: nowrap;
             }
+
             p {
               white-space: nowrap;
             }
+
             > div {
               display: flex;
               justify-content: center;
@@ -277,7 +315,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   body {
     header {
       #connect {
@@ -287,9 +325,11 @@ body {
         }
       }
     }
+
     main {
       display: flex;
       flex-direction: column-reverse;
+
       #left-side {
         width: 100%;
 
@@ -298,7 +338,7 @@ body {
           align-items: center;
           justify-content: space-between;
           padding: 10px 20px;
-          background-color: #3ddc97;
+          background-color: var(--green-1);
           position: relative;
           height: 10vh;
         }
@@ -328,10 +368,12 @@ body {
           display: none;
         }
       }
+
       #right-side {
         #search img {
           display: none;
         }
+
         #nav {
           ul {
             padding: 0;
@@ -339,10 +381,12 @@ body {
             flex-direction: column;
           }
         }
+
         #cards {
           ul {
             justify-content: center;
             padding: 0;
+
             li {
               flex-basis: 90%;
               max-width: 90%;

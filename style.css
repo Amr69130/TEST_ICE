@@ -157,10 +157,14 @@ body {
       #search {
         align-items: center;
         padding: 3em;
-        display: flex;
-        justify-content: center;
-        gap: 1em;
+        div:first-child {
+          float: left;
+          position: relative;
+          left: 20em;
+        }
         div:last-child {
+          justify-items: center;
+          flex-grow: 1;
           text-align: center;
         }
         h1 {
@@ -176,6 +180,7 @@ body {
     }
     #cards {
       padding: 1em;
+
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -187,11 +192,14 @@ body {
         li {
           list-style: none;
           text-align: center;
+          width: 10%;
+          min-width: 10%;
+          max-width: 10%;
+          text-align: center;
           flex-basis: calc(33.33% - 2em);
           max-width: calc(33.33% - 2em);
           &:nth-child(odd) {
             > div {
-              border: solid #3ddc97;
             }
           }
           &:nth-child(even) {
@@ -201,11 +209,15 @@ body {
             }
           }
           > div {
-            padding: 2vh 5vh 2vh 5vh;
             background-color: #e2f8ef;
             border-radius: 5%;
             h3 {
+              padding: 1em;
               color: #3ddc97;
+              white-space: nowrap;
+            }
+            p {
+              white-space: nowrap;
             }
             > div {
               display: flex;

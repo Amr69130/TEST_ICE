@@ -149,7 +149,7 @@ body {
       }
       #title-nav {
         align-items: center;
-        justify-items: center;
+
         padding: 4em;
         background-color: #e2f8ef;
         gap: 2em;
@@ -289,20 +289,19 @@ body {
         }
         #nav {
           ul {
+            padding: 0;
             display: flex;
             flex-direction: column;
           }
         }
         #cards {
           ul {
-            justify-content: center; /* Centre les éléments */
-            padding: 0; /* Supprime les éventuels espaces latéraux */
+            justify-content: center;
+            padding: 0;
             li {
-              flex-basis: 90%; /* Largeur proche de 100% pour centrer */
+              flex-basis: 90%;
               max-width: 90%;
-              margin: 0 auto; /* Centre chaque carte */
-              /* flex-basis: 100%;
-              max-width: 100%; */
+              margin: 0 auto;
             }
           }
         }

@@ -54,108 +54,41 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
       </div>
     </header>
     <main>
-      <!-- Navbar avec menu burger pour mobile -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <!-- Bouton hamburger visible sur mobile -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">CARRE JAUNE</a>
-
-          <!-- Menu de navigation -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li><a href="" class="nav-link text-white"></a>Accueil</li>
-              <li>
-                <a href="" class="nav-link text-white"></a>Mes ordonnances
-              </li>
-              <li>
-                <a href="#" class="nav-link text-black">
-                  <div class="slide">
-                    <div class="dropdown">
-                      <a href="#" class="menu-item">
-                        <span>
-                          <img
-                            src="images/Picto Connexion.png"
-                            alt="pictogramme de connexion"
-                          />
-
-                          Mes patients
-                        </span>
-                        <img
-                          src="images/Vector 2.png"
-                          alt="flèche"
-                          class="fleche"
-                        />
-                      </a>
-                      <ul class="submenu">
-                        <li><a href="#">Tous les patients</a></li>
-                        <li><a href="#">Patients en attente</a></li>
-                        <li><a href="#">Patients archivés</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li><a href="" class="nav-link text-white"></a>Mes pharmacies</li>
-              <li class="text-white">
-                <a href="#" class="nav-link text-black">
-                  <div class="slide">
-                    <div class="dropdown">
-                      <a href="#" class="menu-item">
-                        <span> Mes documents </span>
-
-                        <img
-                          src="images/Vector 2.png"
-                          alt="flèche"
-                          class="fleche"
-                        />
-                      </a>
-                      <ul class="submenu">
-                        <li><a href="#">Document 1</a></li>
-                        <li><a href="#">Document 2</a></li>
-                        <li><a href="#">Document 3</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li><a href="" class="nav-link text-white"></a>Mes Pilbeez</li>
-              <li>
-                <a href="" class="nav-link text-white"></a>Parrainer un cabinet
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">À propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li> -->
-            </ul>
+      <section id="left-side">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mon Site</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-
-      <section id="left-side" class="col-md-2 sidebar">
-        <ul></ul>
+        </nav>
       </section>
+
       <section id="right-side">
         <section id="nav">
           <div id="title-nav">
@@ -384,29 +317,7 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
         </section>
       </section>
     </main>
-    <footer>
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -9,10 +9,11 @@ vous trouverez une double utilisation ; à la fois l'utilisation de la librairie
 ainsi que du CSS personnel, vous verrez également que j'ai choisi dans 
 la mesure du possible de travailler en CSS imbriqué.
 
-Dans la sidebar en desktop les liens "patients" et "documents" sont des menus déroulants 
-actifs en revanche en mobile le menu burger ne l'est pas car je ne savais pas 
-comment réaliser cela sans utiliser js.  */
+  */
 
+* {
+  font-weight: bold;
+}
 body {
   overflow-x: hidden;
   header {
@@ -21,6 +22,50 @@ body {
     padding: 1%;
     align-items: center;
     #connect {
+      /* Style général du menu utilisateur */
+      .user-menu {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      /* Cacher le sous-menu par défaut */
+      .submenu {
+        display: none; /* Le sous-menu est caché par défaut */
+        position: absolute;
+        top: 100%; /* Placer le menu juste sous l'avatar */
+        right: 0; /* Aligner à droite */
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        list-style-type: none;
+        margin: 0;
+      }
+
+      .submenu li {
+        padding: 8px 16px;
+      }
+
+      .submenu li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* La flèche qui tourne */
+      .fleche {
+        margin-left: 8px;
+        transition: transform 0.3s ease; /* Animation de la flèche */
+      }
+
+      /* Quand le menu est survolé, afficher le sous-menu et tourner la flèche */
+      .user-menu:hover .submenu {
+        display: block; /* Afficher le sous-menu */
+      }
+
+      .user-menu:hover .fleche {
+        transform: rotate(180deg); /* La flèche tourne */
+      }
       display: flex;
       gap: 10px;
       align-items: center;
@@ -39,14 +84,14 @@ body {
     padding: 1%;
   }
   #left-side {
-    width: 250px;
     .slide {
       color: rgb(255, 255, 255);
-      padding: 5px;
+      margin: 2vh 0 2vh 0;
     }
     ul {
     }
     li {
+      margin: 2vh;
       list-style: none;
     }
     #bottom-sidebar {
@@ -76,7 +121,7 @@ body {
       margin: 0;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
     }
 
     .dropdown:hover .submenu,
@@ -160,7 +205,7 @@ body {
         div:first-child {
           float: left;
           position: relative;
-          left: 20em;
+          left: 15em;
         }
         div:last-child {
           justify-items: center;

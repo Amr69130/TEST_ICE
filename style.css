@@ -20,29 +20,24 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
   --gradient: linear-gradient(180deg, #e4f4ed 0%, #f9f9f9 59.65%);
   --color-border: rgb(221, 221, 221, 1);
 }
-
 * {
   font-family: var(--font-family);
   font-weight: bold;
   font-size: small;
 }
-
 body {
   overflow-x: hidden;
-
   header {
     display: flex;
     justify-content: space-between;
     padding: 1%;
     align-items: center;
-
     #connect {
       .user-menu {
         position: relative;
         display: inline-block;
         cursor: pointer;
       }
-
       .submenu {
         display: none;
         position: absolute;
@@ -55,182 +50,160 @@ body {
         list-style-type: none;
         margin: 0;
       }
-
       .submenu li {
         padding: 1vh 2vh;
         white-space: nowrap;
       }
-
       .submenu li a {
         text-decoration: none;
         color: black;
       }
-
       .fleche {
         margin-left: 8px;
         transition: transform 0.3s ease;
       }
-
       .user-menu:hover .submenu {
         display: block;
       }
-
       .user-menu:hover .fleche {
         transform: rotate(180deg);
       }
-
       display: flex;
       gap: 10px;
       align-items: center;
-
       p {
         text-align: end;
       }
     }
   }
-
   main {
     display: flex;
-  }
-
-  #right-side {
-    #nav {
-      #title-nav {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-
-        h1 {
+    #right-side {
+      #nav {
+        #title-nav {
           text-align: center;
-        }
-      }
-
-      ul {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 2em;
-
-        li {
-          list-style: none;
-
-          img {
-            color: white;
+          display: flex;
+          flex-direction: column;
+          h1 {
+            text-align: center;
           }
         }
-
-        .link-green {
-          background-color: var(--green-1);
-          color: white;
-          border-radius: 40px;
-          padding: 10px 20px;
-          text-align: center;
-          list-style: none;
-
-          a {
-            text-decoration: none;
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          gap: 2em;
+          li {
+            list-style: none;
+            img {
+              color: white;
+            }
+          }
+          .link-green {
+            background-color: var(--green-1);
             color: white;
+            border-radius: 40px;
+            padding: 10px 20px;
+            text-align: center;
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .link-white {
+            border: solid var(--green-1);
+            color: var(--green-1);
+            border-radius: 40px;
+            padding: 10px 20px;
+            text-align: center;
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: var(--green-1);
+            }
           }
         }
-
-        .link-white {
-          border: solid var(--green-1);
-          color: var(--green-1);
-          border-radius: 40px;
-          padding: 10px 20px;
-          text-align: center;
-          list-style: none;
-
-          a {
-            text-decoration: none;
+        #title-nav {
+          align-items: center;
+          padding: 4em;
+          background: var(--gradient);
+          gap: 2em;
+        }
+        #search {
+          align-items: center;
+          padding: 3em;
+          div:first-child {
+            float: left;
+            position: relative;
+            left: 1vh;
+          }
+          div:last-child {
+            justify-items: center;
+            flex-grow: 1;
+            text-align: center;
+          }
+          h1 {
             color: var(--green-1);
           }
+          .btn {
+            border: solid var(--color-border);
+            border-radius: 40px;
+            text-align: center;
+          }
         }
       }
+      #cards {
+        padding: 1em;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 2em;
 
-      #title-nav {
-        align-items: center;
-        padding: 4em;
-        background: var(--gradient);
-        gap: 2em;
-      }
-
-      #search {
-        align-items: center;
-        padding: 3em;
-
-        div:first-child {
-          float: left;
-          position: relative;
-          left: 1vh;
-        }
-
-        div:last-child {
-          justify-items: center;
-          flex-grow: 1;
-          text-align: center;
-        }
-
-        h1 {
-          color: var(--green-1);
-        }
-
-        .btn {
-          border: solid var(--color-border);
-          border-radius: 40px;
-          text-align: center;
-        }
-      }
-    }
-
-    #cards {
-      padding: 1em;
-
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 2em;
-
-        img {
-          margin-bottom: -1em;
-        }
-
-        li {
-          list-style: none;
-          text-align: center;
-          width: 10%;
-          min-width: 10%;
-          max-width: 10%;
-          text-align: center;
-          flex-basis: calc(33.33% - 2em);
-          max-width: calc(33.33% - 2em);
-
-          &:nth-child(even) {
-            > div {
-              border: solid var(--green-1);
-              background-color: white;
-            }
+          img {
+            margin-bottom: -1em;
           }
 
-          > div {
-            background-color: var(--green-2);
-            border-radius: 5%;
-            h3 {
-              padding: 1em;
-              color: var(--green-1);
-              white-space: nowrap;
+          li {
+            list-style: none;
+            text-align: center;
+            width: 10%;
+            min-width: 10%;
+            max-width: 10%;
+            text-align: center;
+            flex-basis: calc(33.33% - 2em);
+            max-width: calc(33.33% - 2em);
+
+            &:nth-child(even) {
+              > div {
+                border: solid var(--green-1);
+                background-color: white;
+              }
             }
 
             > div {
-              display: flex;
-              justify-content: center;
-              align-items: flex-start;
-              gap: 1em;
+              background-color: var(--green-2);
+              border-radius: 5%;
+              h3 {
+                padding: 1em;
+                color: var(--green-1);
+                white-space: nowrap;
+              }
+
+              > div {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1em;
+              }
             }
           }
         }
       }
     }
+  }
+  footer {
+    display: none;
   }
 }
 
@@ -244,10 +217,13 @@ body {
         }
       }
     }
-
     main {
       display: flex;
       flex-direction: column-reverse;
+
+      #left-side {
+        display: none;
+      }
 
       #right-side {
         #search img {
@@ -261,7 +237,6 @@ body {
             flex-direction: column;
           }
         }
-
         #cards {
           ul {
             justify-content: center;
@@ -274,6 +249,13 @@ body {
             }
           }
         }
+      }
+    }
+    footer {
+      display: flex;
+
+      .navbar {
+        background-color: var(--green-1);
       }
     }
   }

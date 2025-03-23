@@ -93,76 +93,6 @@ body {
     display: flex;
   }
 
-  .sidebar {
-    background-color: var(--green-1);
-    color: white;
-    padding: 1%;
-  }
-
-  #left-side {
-    width: 40vh;
-    .slide {
-      color: rgb(255, 255, 255);
-      margin: 3vh 0 3vh 0;
-    }
-
-    li {
-      margin: 1vh;
-      list-style: none;
-      white-space: nowrap;
-    }
-
-    .menu-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 5px;
-      cursor: pointer;
-
-      color: rgb(255, 249, 249);
-      text-decoration: none;
-    }
-
-    .menu-item img {
-      transition: transform 0.3s;
-    }
-
-    .submenu {
-      list-style: none;
-
-      li a {
-        text-decoration: none;
-        color: white;
-      }
-
-      margin: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease-in-out;
-    }
-
-    .dropdown:hover .submenu,
-    .dropdown:focus-within .submenu {
-      max-height: 200px;
-    }
-
-    .dropdown:hover .menu-item .fleche,
-    .dropdown:focus-within .menu-item .fleche {
-      transform: rotate(180deg);
-    }
-
-    .dropdown:hover .menu-item,
-    img .dropdown:focus-within .menu-item {
-      color: black;
-    }
-
-    .dropdown:hover .menu-item .fleche,
-    .dropdown:focus-within .menu-item .fleche {
-      transform: rotate(180deg);
-      filter: brightness(0) !important;
-    }
-  }
-
   #right-side {
     #nav {
       #title-nav {
@@ -302,9 +232,6 @@ body {
       }
     }
   }
-  footer {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -321,37 +248,6 @@ body {
     main {
       display: flex;
       flex-direction: column-reverse;
-
-      #left-side {
-        width: 100%;
-
-        #bottom-sidebar {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 10px 20px;
-          background-color: var(--green-1);
-          position: relative;
-          height: 10vh;
-        }
-
-        #points {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
-
-        #points p {
-          margin: 0;
-          font-weight: bold;
-        }
-
-        ul {
-          display: none;
-        }
-      }
 
       #right-side {
         #search img {
@@ -380,8 +276,5 @@ body {
         }
       }
     }
-  }
-  footer {
-    display: flex;
   }
 }

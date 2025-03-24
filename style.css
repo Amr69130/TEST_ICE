@@ -19,6 +19,7 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
   --green-2: #e2f8ef;
   --gradient: linear-gradient(180deg, #e4f4ed 0%, #f9f9f9 59.65%);
   --color-border: rgb(221, 221, 221, 1);
+  --color-points: rgba(255, 217, 0, 1);
 }
 * {
   font-family: var(--font-family);
@@ -78,6 +79,10 @@ body {
   }
   main {
     display: flex;
+    #left-side {
+      /*une sidebar en colonne avec le background de couleur verte*/
+      background-color: var(--green-1);
+    }
     #right-side {
       #nav {
         #title-nav {
@@ -256,6 +261,26 @@ body {
 
       .navbar {
         background-color: var(--green-1);
+        padding: 20px 0px;
+        font-size: 1.25rem;
+      }
+      .navbar-toggler {
+        padding: 15px;
+        font-size: 1.25rem;
+      }
+      .navbar-toggler-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .nav-points {
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        right: 0%;
+        background-color: var(--color-points);
+        text-align: center;
+        align-content: center;
       }
     }
   }

@@ -54,7 +54,11 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
       </div>
     </header>
     <main>
-      <section id="left-side">test</section>
+      <section id="left-side">
+        <!-- une sidebar type bootstrap 
+       qui ne sera actif que sur la version desktop -->
+        SIDEBAR EN UL LI COLONNE
+      </section>
       <section id="right-side">
         <section id="nav">
           <div id="title-nav">
@@ -287,7 +291,7 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
       <!-- un footer sticky de type navbar bootstrap 
        qui ne sera actif que sur la version mobile -->
 
-      <nav class="navbar navbar-dark fixed-bottom">
+      <nav class="navbar navbar-dark fixed-bottom py-2">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -299,12 +303,6 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="ml-auto" style="height: 100%">
-            <div
-              class="rectangle"
-              style="background-color: red; height: 100%; width: 200px"
-            ></div>
-          </div>
 
           <div
             class="offcanvas offcanvas-end text-bg-dark"
@@ -436,6 +434,10 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
               </form> -->
             </div>
           </div>
+        </div>
+        <div class="nav-points">
+          <p class="h4 text-white">1740</p>
+          <p class="h6 text-black">POINTS</p>
         </div>
       </nav>
     </footer>

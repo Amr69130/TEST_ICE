@@ -57,7 +57,85 @@ je me suis référé à la taille "small" des breakpoints selon Bootstrap (≥57
       <section id="left-side">
         <!-- une sidebar type bootstrap 
        qui ne sera actif que sur la version desktop -->
-        SIDEBAR EN UL LI COLONNE
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Mes ordonnances</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mes patients
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Tous les patients</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Patients en attente</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Patients archivés</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Mes pharmacies</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mes documents
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Document n°1</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Document n°2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Document n°3</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ajouter un document</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Modifier un document</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Supprimer un document</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Mes Pilbeez</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Parrainer un cabinet</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <img src="images/picto_tel.png" alt="pictogramme téléphone" />
+          <img src="images/Picto_mail.svg" alt="pictogramme mail" />
+        </div>
       </section>
       <section id="right-side">
         <section id="nav">

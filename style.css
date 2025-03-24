@@ -80,8 +80,20 @@ body {
   main {
     display: flex;
     #left-side {
-      /*une sidebar en colonne avec le background de couleur verte*/
       background-color: var(--green-1);
+      width: 30%;
+      padding: 1em;
+      .contact {
+        display: flex;
+        /*space between*/
+        justify-content: space-evenly;
+        /*negative margin*/
+        margin-left: -20%;
+        background-color: white;
+        border-radius: 30px;
+        padding: 5%;
+        width: 80%;
+      }
     }
     #right-side {
       #nav {

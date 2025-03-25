@@ -90,6 +90,7 @@ body {
       background-color: var(--green-1);
       width: 30%;
       padding: 1em;
+
       .contact {
         display: flex;
 
